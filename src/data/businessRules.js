@@ -14,6 +14,31 @@ export const businessRules = {
   maxGuests: 9,
   checkInTime: "14:00",
   checkOutTime: "12:00",
+  propertyOverview: {
+    bedrooms: 3,
+    beds: 5,
+    bathrooms: 1,
+    minimumStayNights: 1,
+    amenities: [
+      { id: "privateHouse", available: true },
+      { id: "parking", available: true },
+      { id: "wifi", available: true },
+      { id: "heating", available: true },
+      { id: "kitchen", available: true },
+      { id: "pets", available: false },
+    ],
+    // Update these bed types when the final bedroom layout is confirmed.
+    sleepingArrangement: [
+      { id: "bedroom1" },
+      { id: "bedroom2" },
+      { id: "bedroom3" },
+    ],
+    houseRules: {
+      paymentAtHouse: ["card", "cash"],
+      depositPercentage: 30,
+      petsAllowed: false,
+    },
+  },
   amenities: [
     "Wi-Fi",
     "Heating",

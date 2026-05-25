@@ -3,11 +3,14 @@ import {
   AlertCircle,
   ArrowLeft,
   Bath,
+  Bed,
   BedDouble,
   CalendarDays,
   Car,
   Check,
   ChevronRight,
+  Clock,
+  CreditCard,
   Flame,
   Globe2,
   Home,
@@ -15,6 +18,7 @@ import {
   MapPin,
   Menu,
   Mountain,
+  PawPrint,
   ParkingCircle,
   Phone,
   Send,
@@ -71,15 +75,41 @@ const content = {
     bookNow: "Request dates",
     explore: "Explore experiences",
     stats: ["Guests", "3 bedrooms", "5 beds", "Large parking"],
-    aboutTitle: "A private house between comfort and wild air",
+    aboutTitle: "Private house between comfort and wild air",
     aboutText:
       "The house is made for travelers who want their own peaceful base in nature without giving up the practical comforts of home. Stay together, cook together, warm up after mountain air, and plan the next ride or trail from one relaxed place.",
-    houseFacts: [
-      ["Capacity", "Guests"],
-      ["Bedrooms", "3"],
-      ["Beds", "5 total"],
-      ["Bathrooms", "1"],
-    ],
+    propertyOverview: {
+      kicker: "Property overview",
+      imageCaption: "A private base for quiet stays, shared meals, and mountain days.",
+      features: {
+        capacity: ["Capacity", "1-9 guests"],
+        bedrooms: ["Bedrooms", "3 separate bedrooms"],
+        beds: ["Beds", "5 total beds"],
+        bathrooms: ["Bathrooms", "1 bathroom"],
+        privateHouse: ["Private house", "Entire place is yours"],
+        parking: ["Parking", "Large parking area"],
+        wifi: ["Wi-Fi", "Free Wi-Fi available"],
+        heating: ["Heating", "Heating available"],
+        kitchen: ["Kitchen", "Kitchen available"],
+        pets: ["Pets", "Pets are not allowed"],
+      },
+      sleepingTitle: "Sleeping arrangement",
+      bedroomLabel: "Bedroom",
+      separateRoom: "Separate room",
+      bedTypePlaceholder: "Add bed type here",
+      totalBeds: "Total beds",
+      maximumGuests: "Maximum guests",
+      goodToKnowTitle: "Good to know",
+      goodToKnow: {
+        checkIn: "Check-in",
+        checkOut: "Check-out",
+        minimumStay: "Minimum stay",
+        minimumStayValue: "1 night",
+        payment: "Card and cash payment available at the house",
+        deposit: "30% deposit required to reserve dates",
+        pets: "Pets are not allowed",
+      },
+    },
     amenitiesTitle: "Everything essential, nothing complicated",
     amenities: [
       ["Wi-Fi", "Reliable connection for planning, work, and sharing the day."],
@@ -139,15 +169,41 @@ const content = {
     bookNow: "Ուղարկել հարցում",
     explore: "Տեսնել փորձառությունները",
     stats: ["Հյուրեր", "3 ննջասենյակ", "5 մահճակալ", "Մեծ կայանատեղի"],
-    aboutTitle: "Առանձին տուն` հարմարավետության և լեռնային օդի միջև",
+    aboutTitle: "Առանձին տուն՝ հարմարավետության և լեռնային օդի միջև",
     aboutText:
       "Տունը ստեղծված է նրանց համար, ովքեր ուզում են հանգիստ բնության մեջ և տան հարմարավետություն։ Կարող եք մնալ միասին, պատրաստել խոհանոցում, տաքանալ զբոսանքից հետո և պլանավորել հաջորդ արկածը մեկ հարմար վայրից։",
-    houseFacts: [
-      ["Տարողություն", "Հյուրեր"],
-      ["Ննջասենյակ", "3"],
-      ["Մահճակալ", "ընդամենը 5"],
-      ["Լոգասենյակ", "1"],
-    ],
+    propertyOverview: {
+      kicker: "Տան ամփոփում",
+      imageCaption: "Առանձին հանգիստ վայր՝ միասին մնալու, պատրաստելու և լեռնային օրեր անցկացնելու համար։",
+      features: {
+        capacity: ["Տարողություն", "1-9 հյուր"],
+        bedrooms: ["Ննջասենյակներ", "3 առանձին ննջասենյակ"],
+        beds: ["Մահճակալներ", "ընդամենը 5 մահճակալ"],
+        bathrooms: ["Լոգասենյակ", "1 լոգասենյակ"],
+        privateHouse: ["Առանձին տուն", "Ամբողջ տունը ձերն է"],
+        parking: ["Կայանատեղի", "Մեծ կայանատեղի"],
+        wifi: ["Wi-Fi", "Անվճար Wi-Fi"],
+        heating: ["Ջեռուցում", "Ջեռուցում կա"],
+        kitchen: ["Խոհանոց", "Խոհանոց կա"],
+        pets: ["Կենդանիներ", "Կենդանիներ չեն թույլատրվում"],
+      },
+      sleepingTitle: "Քնելու դասավորություն",
+      bedroomLabel: "Ննջասենյակ",
+      separateRoom: "Առանձին սենյակ",
+      bedTypePlaceholder: "Ավելացնել մահճակալի տեսակը այստեղ",
+      totalBeds: "Ընդհանուր մահճակալներ",
+      maximumGuests: "Առավելագույն հյուրեր",
+      goodToKnowTitle: "Պետք է իմանալ",
+      goodToKnow: {
+        checkIn: "Մուտք",
+        checkOut: "Ելք",
+        minimumStay: "Նվազագույն մնալ",
+        minimumStayValue: "1 գիշեր",
+        payment: "Քարտով և կանխիկ վճարումը հասանելի է տանը",
+        deposit: "Ամսաթվերը ամրագրելու համար անհրաժեշտ է 30% կանխավճար",
+        pets: "Կենդանիներ չեն թույլատրվում",
+      },
+    },
     amenitiesTitle: "Անհրաժեշտ ամեն ինչ` պարզ ու հարմար",
     amenities: [
       ["Wi-Fi", "Կապ պլանավորման, աշխատանքի և տպավորություններով կիսվելու համար։"],
@@ -210,12 +266,38 @@ const content = {
     aboutTitle: "Частный дом между комфортом и горным воздухом",
     aboutText:
       "Дом подходит путешественникам, которым нужна спокойная база на природе и домашний комфорт. Здесь удобно отдыхать вместе, готовить, согреваться после прогулок и планировать новые маршруты.",
-    houseFacts: [
-      ["Вместимость", "Гости"],
-      ["Спальни", "3"],
-      ["Кровати", "5 всего"],
-      ["Ванные", "1"],
-    ],
+    propertyOverview: {
+      kicker: "Обзор дома",
+      imageCaption: "Частная спокойная база для отдыха, общих ужинов и горных дней.",
+      features: {
+        capacity: ["Вместимость", "1-9 гостей"],
+        bedrooms: ["Спальни", "3 отдельные спальни"],
+        beds: ["Кровати", "5 кроватей всего"],
+        bathrooms: ["Ванная", "1 ванная"],
+        privateHouse: ["Частный дом", "Весь дом в вашем распоряжении"],
+        parking: ["Парковка", "Большая парковочная зона"],
+        wifi: ["Wi-Fi", "Бесплатный Wi-Fi"],
+        heating: ["Отопление", "Есть отопление"],
+        kitchen: ["Кухня", "Есть кухня"],
+        pets: ["Питомцы", "Питомцы не допускаются"],
+      },
+      sleepingTitle: "Спальные места",
+      bedroomLabel: "Спальня",
+      separateRoom: "Отдельная комната",
+      bedTypePlaceholder: "Добавить тип кровати здесь",
+      totalBeds: "Всего кроватей",
+      maximumGuests: "Максимум гостей",
+      goodToKnowTitle: "Полезно знать",
+      goodToKnow: {
+        checkIn: "Заезд",
+        checkOut: "Выезд",
+        minimumStay: "Минимальный срок",
+        minimumStayValue: "1 ночь",
+        payment: "Оплата картой и наличными доступна в доме",
+        deposit: "Для резерва дат требуется депозит 30%",
+        pets: "Питомцы не допускаются",
+      },
+    },
     amenitiesTitle: "Все важное без лишней сложности",
     amenities: [
       ["Wi-Fi", "Связь для планирования, работы и обмена впечатлениями."],
@@ -594,6 +676,27 @@ const bookingCopy = {
 };
 
 const amenityIcons = [Wifi, Flame, Utensils, ParkingCircle, Home, ShieldCheck];
+const propertyFeatureIcons = {
+  capacity: Users,
+  bedrooms: BedDouble,
+  beds: Bed,
+  bathrooms: Bath,
+  privateHouse: Home,
+  parking: Car,
+  wifi: Wifi,
+  heating: Flame,
+  kitchen: Utensils,
+  pets: PawPrint,
+};
+const primaryPropertyFeatureIds = ["capacity", "bedrooms", "beds", "bathrooms"];
+const goodToKnowIcons = {
+  checkIn: Clock,
+  checkOut: Clock,
+  minimumStay: CalendarDays,
+  payment: CreditCard,
+  deposit: ShieldCheck,
+  pets: PawPrint,
+};
 const gallery = [images.house, images.forest, images.horses, images.jeep, images.cabin, images.table];
 const locationCoordinates = businessRules.location.coordinates;
 const coordinatesLabel = `${locationCoordinates.latitude}, ${locationCoordinates.longitude}`;
@@ -637,9 +740,22 @@ function App() {
   const bookingUi = bookingCopy[lang] ?? bookingCopy.en;
   const guestRangeLabel = getGuestRangeLabel(lang);
   const stats = [guestRangeLabel, ...t.stats.slice(1)];
-  const houseFacts = t.houseFacts.map(([label, value], index) =>
-    index === 0 ? [label, guestRangeLabel] : [label, value],
-  );
+  const propertyOverview = businessRules.propertyOverview;
+  const propertyFeatures = [
+    { id: "capacity" },
+    { id: "bedrooms" },
+    { id: "beds" },
+    { id: "bathrooms" },
+    ...propertyOverview.amenities,
+  ];
+  const goodToKnowItems = [
+    { id: "checkIn", value: businessRules.checkInTime },
+    { id: "checkOut", value: businessRules.checkOutTime },
+    { id: "minimumStay", value: t.propertyOverview.goodToKnow.minimumStayValue },
+    { id: "payment", value: t.propertyOverview.goodToKnow.payment },
+    { id: "deposit", value: t.propertyOverview.goodToKnow.deposit },
+    { id: "pets", value: t.propertyOverview.goodToKnow.pets, disabled: true },
+  ];
   const price = useMemo(() => calculateSimpleBookingPrice(booking), [booking]);
   const canCalculateDates = Boolean(booking.checkIn && booking.checkOut);
   const isDateRangeUnavailable = doesRangeOverlapBlockedDates(booking.checkIn, booking.checkOut, publicBlockedDates);
@@ -1019,35 +1135,118 @@ function App() {
           </div>
         </section>
 
-        <section id="house" className="mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
-          <div>
-            <SectionKicker icon={Home} label={businessPrimaryName} />
-            <h2 className="mt-4 max-w-2xl font-serif text-4xl leading-tight text-forest-900 sm:text-5xl">
-              {t.aboutTitle}
-            </h2>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-ink/75">{t.aboutText}</p>
-            <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
-              {houseFacts.map(([label, value]) => (
-                <div key={label} className="rounded-md border border-forest-900/10 bg-white p-4 shadow-sm">
-                  <p className="text-xs uppercase tracking-[0.16em] text-ink/45">{label}</p>
-                  <p className="mt-2 font-semibold text-forest-900">{value}</p>
+        <section id="house" className="bg-forest-50/70 py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
+              <div>
+                <SectionKicker icon={Home} label={t.propertyOverview.kicker} />
+                <h2 className="mt-4 max-w-2xl font-serif text-4xl leading-tight text-forest-900 sm:text-5xl">
+                  {t.aboutTitle}
+                </h2>
+                <p className="mt-6 max-w-2xl text-lg leading-8 text-ink/75">{t.aboutText}</p>
+
+                <div className="mt-8 overflow-hidden rounded-md bg-white shadow-soft">
+                  <div className="relative aspect-[4/3] min-h-[300px]">
+                    <img src={images.house} alt="Private vacation house surrounded by nature" className="absolute inset-0 size-full object-cover" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-forest-900/78 via-forest-900/12 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
+                      <p className="max-w-sm text-sm font-semibold leading-6 text-white/90">{t.propertyOverview.imageCaption}</p>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-px bg-forest-900/10 sm:grid-cols-4">
+                    {primaryPropertyFeatureIds.map((featureId) => {
+                      const [label, value] = t.propertyOverview.features[featureId];
+                      const displayValue = featureId === "capacity" ? guestRangeLabel : value;
+                      const Icon = propertyFeatureIcons[featureId];
+                      return (
+                        <div key={featureId} className="bg-white p-4">
+                          <Icon size={19} className="text-clay" aria-hidden="true" />
+                          <p className="mt-2 text-xs font-semibold uppercase tracking-[0.14em] text-ink/45">{label}</p>
+                          <p className="mt-1 text-sm font-semibold text-forest-900">{displayValue}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
-              ))}
+              </div>
+
+              <div className="grid gap-3 sm:grid-cols-2">
+                {propertyFeatures.map((feature) => {
+                  const [label, value] = t.propertyOverview.features[feature.id];
+                  const displayValue = feature.id === "capacity" ? guestRangeLabel : value;
+                  const Icon = propertyFeatureIcons[feature.id];
+                  const disabled = feature.available === false;
+
+                  return (
+                    <PropertyFeatureCard
+                      key={feature.id}
+                      icon={Icon}
+                      label={label}
+                      value={displayValue}
+                      disabled={disabled}
+                    />
+                  );
+                })}
+              </div>
             </div>
-          </div>
-          <div className="relative min-h-[430px] overflow-hidden rounded-md shadow-soft">
-            <img src={images.house} alt="Private vacation house surrounded by nature" className="size-full object-cover" />
-            <div className="absolute bottom-4 left-4 right-4 rounded-md bg-cream/92 p-4 backdrop-blur">
-              <div className="grid grid-cols-3 gap-3 text-sm font-semibold text-forest-900">
-                <span className="inline-flex items-center gap-2">
-                  <BedDouble size={17} /> 5
-                </span>
-                <span className="inline-flex items-center gap-2">
-                  <Bath size={17} /> 1
-                </span>
-                <span className="inline-flex items-center gap-2">
-                  <Users size={17} /> {businessRules.minGuests}-{businessRules.maxGuests}
-                </span>
+
+            <div className="mt-12 grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+              <div>
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+                  <h3 className="font-serif text-3xl leading-tight text-forest-900">{t.propertyOverview.sleepingTitle}</h3>
+                  <div className="flex flex-wrap gap-2">
+                    <InfoBadge icon={Bed} text={`${t.propertyOverview.totalBeds}: ${propertyOverview.beds}`} />
+                    <InfoBadge icon={Users} text={`${t.propertyOverview.maximumGuests}: ${businessRules.maxGuests}`} />
+                  </div>
+                </div>
+
+                <div className="mt-5 grid gap-4 md:grid-cols-3">
+                  {propertyOverview.sleepingArrangement.map((room, index) => (
+                    <article key={room.id} className="rounded-md border border-forest-900/10 bg-white p-5 shadow-sm">
+                      <div className="flex items-start gap-3">
+                        <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-forest-100 text-forest-700">
+                          <BedDouble size={21} aria-hidden="true" />
+                        </span>
+                        <div>
+                          <h4 className="text-lg font-semibold text-forest-900">
+                            {t.propertyOverview.bedroomLabel} {index + 1}
+                          </h4>
+                          <p className="mt-1 text-sm font-semibold text-ink/55">{t.propertyOverview.separateRoom}</p>
+                        </div>
+                      </div>
+                      <p className="mt-5 rounded-md border border-dashed border-forest-900/18 bg-forest-50 px-4 py-3 text-sm font-semibold text-ink/62">
+                        {t.propertyOverview.bedTypePlaceholder}
+                      </p>
+                    </article>
+                  ))}
+                </div>
+              </div>
+
+              <div className="rounded-md border border-forest-900/10 bg-white p-5 shadow-sm">
+                <h3 className="font-serif text-3xl leading-tight text-forest-900">{t.propertyOverview.goodToKnowTitle}</h3>
+                <div className="mt-5 grid gap-3">
+                  {goodToKnowItems.map((item) => {
+                    const Icon = goodToKnowIcons[item.id];
+                    const label = t.propertyOverview.goodToKnow[item.id];
+                    const hasCompactLabel = item.id === "checkIn" || item.id === "checkOut" || item.id === "minimumStay";
+
+                    return (
+                      <div
+                        key={item.id}
+                        className={`flex items-start gap-3 rounded-md border px-4 py-3 ${
+                          item.disabled
+                            ? "border-forest-900/10 bg-cream/70 text-ink/58"
+                            : "border-forest-900/10 bg-forest-50/70 text-forest-900"
+                        }`}
+                      >
+                        <Icon size={19} className={`mt-0.5 shrink-0 ${item.disabled ? "text-ink/35" : "text-clay"}`} aria-hidden="true" />
+                        <p className="text-sm font-semibold leading-6">
+                          {hasCompactLabel ? `${label}: ${item.value}` : item.value}
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>
@@ -1790,6 +1989,34 @@ function Activity({ image, icon: Icon, title, text, to, buttonLabel }) {
         </span>
       </div>
     </Link>
+  );
+}
+
+function PropertyFeatureCard({ icon: Icon, label, value, disabled = false }) {
+  return (
+    <article
+      className={`rounded-md border p-4 shadow-sm transition hover:-translate-y-0.5 ${
+        disabled
+          ? "border-forest-900/10 bg-cream/75"
+          : "border-forest-900/10 bg-white hover:shadow-soft"
+      }`}
+    >
+      <div className="flex items-start gap-3">
+        <span
+          className={`flex size-11 shrink-0 items-center justify-center rounded-full ${
+            disabled ? "bg-ink/10 text-ink/45" : "bg-forest-100 text-forest-700"
+          }`}
+        >
+          <Icon size={21} aria-hidden="true" />
+        </span>
+        <div className="min-w-0">
+          <h3 className="text-sm font-semibold uppercase tracking-[0.14em] text-ink/45">{label}</h3>
+          <p className={`mt-1 text-base font-semibold leading-6 ${disabled ? "text-ink/58" : "text-forest-900"}`}>
+            {value}
+          </p>
+        </div>
+      </div>
+    </article>
   );
 }
 
